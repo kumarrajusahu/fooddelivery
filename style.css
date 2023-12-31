@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+
+} 
+
+body{
+  width: 100%;
+  /*background-color: rgb(246, 240, 240);*/
+}
+
+/* Navigation Bar */
+#navbar{ 
+  display: flex;
+  position: relative;
+  top: 0px;
+  background-color: gray;
+  position:sticky;
+  z-index: 1;
+  width: 100%;
+}
+/* logo and image */
+
+#logo{
+  height: 50px;
+  width: 50px;
+}
+/* list styling */
+#navbar ul{
+  display: flex;
+  
+  
+  
+}
+/* psuedo class learn it */
+#navbar::before{
+
+  content: "";
+  background-color: black;
+  position: absolute;
+  height:100%;
+  width:100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li{
+  
+  list-style: none;
+  font-size:1.3rem ;
+
+}
+#navbar ul li a{
+  font-family: serif;
+  color: white;
+  display: block;
+  padding: 3px 50px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover{
+  color:black;
+  background-color: white;
+  display: block;
+  
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction:column ;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+  height:350px;
+  position:relative;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  background: url(https://cdn.pixabay.com/photo/2019/03/26/00/41/hot-dog-4081683_1280.jpg);
+  background-size:cover;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+  opacity:.85;
+  overflow-x: hidden;
+
+}
+
+#home h1{
+  font-family: agbalumo;
+  color:white;
+  text-align:center;
+}
+#home p{
+  font-family: 'Bree Serif', serif;
+  color: white;
+  text-align: center;
+  font-size:1.5rem;
+}
+/*service section */
+#services{
+  /*margin:34px;*/
+  display: flex;
+  display: inline;
+  width: 99%;
+}
+#services .box{
+  border:2px solid brown;
+  padding: 5px;
+  /*margin:6px;*/
+  border-radius: 20px;
+  width: 30%;
+  margin-left: 17px;
+}
+#services .box img{
+  height: 300px;
+  width:100%;
+}
+#services{
+  display: flex;
+}
+#services{
+  padding: 5px;
+}
+
+/*client section */
+#client-section{
+height: 355px;
+}
+#client{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(image/sweet2.jpg);
+}
+.client-item{
+  display: flex;
+  padding: 50px;
+  /*margin: 5px;*/
+  height: 100px;
+}
+
+
+
+
+/* utility classes */
+.h-primary{
+  font-family: bree serif ,serif;
+  font-size: 3rem;
+  padding: 12px;
+  text-align: center;
+}
+
+.h-secondary{
+  padding:12px;
+  font-size: 2.8rem;
+}
+
+.btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color:brown ;
+  color: white;
+  margin: 15px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor:pointer;
+  z-index: 0;
+}
+.center{
+  text-align: center;
+}
+/* form section */
+#contact{
+margin: 2px 0px 2px 200px;
+width: auto;
+}
+#submit{
+  margin: 5px;
+  background-color: grey;
+  
+}
+/* footer */
+footer{
+  background-color: black;
+  color: aliceblue;
+  padding-left:100px;
+}
